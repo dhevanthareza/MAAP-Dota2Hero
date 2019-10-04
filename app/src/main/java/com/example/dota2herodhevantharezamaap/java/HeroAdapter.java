@@ -1,4 +1,4 @@
-package com.example.dota2herodhevantharezamaap;
+package com.example.dota2herodhevantharezamaap.java;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,19 +9,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.dota2herodhevantharezamaap.R;
 
 import java.util.ArrayList;
 
 public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.CardViewHolder> {
     private ArrayList<Hero> listHero;
+
     public HeroAdapter(ArrayList<Hero> list) {
         this.listHero = list;
     }
+
     @NonNull
     @Override
     public CardViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
@@ -34,7 +36,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.CardViewHolder
         final Hero hero = listHero.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(hero.getImage())
-                .apply(new RequestOptions().override(350,550))
+                .apply(new RequestOptions().override(350, 550))
                 .into(holder.imgPhoto);
         holder.tvName.setText(hero.getName().toUpperCase());
         holder.btnDetail.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +60,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.CardViewHolder
         ImageView imgPhoto;
         TextView tvName;
         Button btnDetail;
+
         CardViewHolder(@NonNull View itemView) {
             super(itemView);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);

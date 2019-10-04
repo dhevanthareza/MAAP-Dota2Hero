@@ -1,15 +1,16 @@
 
-package com.example.dota2herodhevantharezamaap;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.dota2herodhevantharezamaap.java;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toolbar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.dota2herodhevantharezamaap.R;
 
 public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_NAME = "extra_name";
@@ -39,6 +40,7 @@ public class DetailActivity extends AppCompatActivity {
             getSupportActionBar().setTitle(name);
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 

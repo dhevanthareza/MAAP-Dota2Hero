@@ -1,4 +1,4 @@
-package com.example.dota2herodhevantharezamaap;
+package com.example.dota2herodhevantharezamaap.java;
 
 public class Hero {
     private String name, detail;
