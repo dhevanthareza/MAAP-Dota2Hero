@@ -1,4 +1,4 @@
-package com.example.dota2herodhevantharezamaap;
+package com.example.dota2herodhevantharezamaap.java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.dota2herodhevantharezamaap.R;
 
 public class ProfilActivity extends AppCompatActivity {
 
