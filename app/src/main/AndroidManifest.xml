@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kotlin.activity.SplashScreenActivity"></activity>
-        <activity android:name=".kotlin.activity.DetailActivity" />
-        <activity android:name=".kotlin.activity.ProfilActivity" />
-        <activity android:name=".kotlin.activity.MainActivity">
+        <activity android:name=".kotlin.activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".kotlin.activity.DetailActivity" />
+        <activity android:name=".kotlin.activity.ProfilActivity" />
+        <activity android:name=".kotlin.activity.MainActivity"/>
         <activity android:name=".java.ProfilActivity" />
         <activity android:name=".java.DetailActivity" />
         <activity android:name=".java.MainActivity" />

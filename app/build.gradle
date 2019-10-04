@@ -7,7 +7,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.dota2herodhevantharezamaap"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -31,6 +31,8 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
 
     implementation "org.jetbrains.anko:anko:0.10.8"
+
+    implementation "com.airbnb.android:lottie:3.0.7"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
